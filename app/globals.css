@@ -634,7 +634,7 @@ video {
 
 .about-lead {
   max-width: 560px;
-  margin: 52px 0 20px;
+  margin: 52px 0 0;
   font-size: clamp(1.15rem, 2vw, 1.55rem);
   line-height: 1.5;
 }
@@ -1823,7 +1823,7 @@ body.menu-open {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
   width: min(100%, 620px);
-  margin: 42px 0 0;
+  margin: 34px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.28);
 }
 
@@ -1883,7 +1883,7 @@ body.menu-open {
 
 .shop-flow-steps article {
   display: grid;
-  grid-template-columns: 48px 0.75fr 1fr;
+  grid-template-columns: 48px 1fr;
   gap: 20px;
   align-items: start;
   padding-block: 34px 42px;

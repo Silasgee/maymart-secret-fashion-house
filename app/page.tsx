@@ -83,7 +83,7 @@ export default function Home() {
           <div className="hero-content shell">
             <p className="eyebrow">Maymart Secret / Lagos</p>
             <h1 id="hero-title">Everyday.<br /><em>Unmissable.</em></h1>
-            <p className="hero-copy">Clean shapes. Confident colour. Clothing made to make your everyday look feel like your own.</p>
+            <p className="hero-copy">Clean shapes. Confident colour.</p>
             <div className="hero-actions">
               <a className="button button-light" href="#collection">Explore the collection</a>
               <a className="button button-outline" href={whatsappLink()} target="_blank" rel="noreferrer">
@@ -124,8 +124,7 @@ export default function Home() {
           <div className="about-copy">
             <p className="eyebrow">This is Maymart Secret</p>
             <h2>Streetwear to<br />ceremony.</h2>
-            <p className="about-lead">Maymart Secret is a fashion-forward Lagos brand blending urban streetwear with luxury craftsmanship.</p>
-            <p>We specialise in high-quality T-shirts, hoodies and joggers designed for effortless style, alongside premium ready-to-wear and exquisite wedding outfits. From casual cool to elevated elegance, every look is made to bring comfort, confidence and individuality to your wardrobe.</p>
+            <p className="about-lead">Lagos streetwear, ready-to-wear and wedding outfits.</p>
 
             <dl className="brand-details" aria-label="Maymart Secret brand details">
               <div>
@@ -158,9 +157,9 @@ export default function Home() {
             <h2 id="shop-flow-title">See it.<br />Open it.<br /><em>Ask.</em></h2>
           </div>
           <div className="shop-flow-steps">
-            <article><span>01</span><h3>Browse</h3><p>Move through the collection by clothing category.</p></article>
-            <article><span>02</span><h3>Open a look</h3><p>Tap any picture for a larger, cleaner product view.</p></article>
-            <article><span>03</span><h3>Ask directly</h3><p>Send the product name to Maymart Secret on WhatsApp.</p></article>
+            <article><span>01</span><h3>Browse</h3></article>
+            <article><span>02</span><h3>Open a look</h3></article>
+            <article><span>03</span><h3>Ask on WhatsApp</h3></article>
           </div>
         </section>
 

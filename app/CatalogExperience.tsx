@@ -117,7 +117,7 @@ function LookDialog({ look, onClose }: { look: Look; onClose: () => void }) {
         <div className="look-dialog-copy">
           <p>{look.category} / {String(look.id).padStart(2, "0")}</p>
           <h2 id="look-dialog-title">{look.name}</h2>
-          <p className="look-dialog-note">Ask Maymart Secret for the current price, available sizes and availability.</p>
+          <p className="look-dialog-note">Ask about price, sizes and availability.</p>
           <a className="button dialog-whatsapp" href={inquiryLink(look)} target="_blank" rel="noreferrer">
             Ask on WhatsApp <span aria-hidden="true">↗</span>
           </a>
@@ -190,7 +190,6 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
             <h2 id="lookbook-title">Not a shop floor.<br /><em>A style archive.</em></h2>
           </div>
           <div className="lookbook-intro">
-            <p>Real pieces. Real pictures. No listed prices—open a look and ask Maymart Secret directly.</p>
             <nav aria-label="Collection categories">
               <a href="#hoodies">Hoodies & sets</a>
               <a href="#tees">T-shirts</a>
@@ -220,7 +219,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
           <div className="story-title shell story-title-light">
             <span>02 / Graphic language</span>
             <h3 id="tees-title">The wall of tees.</h3>
-            <p>Swipe the rail. Open any look.</p>
+            <p>Swipe to browse.</p>
           </div>
           <div className="tee-rail" aria-label="T-shirt collection">
             {byIds([5, 6, 7, 8, 9, 10, 11, 12, 14, 15]).map((look, index) => (
@@ -233,7 +232,6 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
           <div className="red-story-copy shell">
             <span>03 / Lifestyle story</span>
             <h3 id="red-story-title">One set.<br />Four frames.</h3>
-            <p>A matching red look, photographed with its own energy.</p>
           </div>
           <div className="red-story-grid shell">
             {byIds([16, 17, 18, 19]).map((look, index) => (
