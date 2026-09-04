@@ -1,6 +1,9 @@
 import Image from "next/image";
 
 const WHATSAPP_NUMBER = "2340000000000"; // Replace with Maymart Secret's real WhatsApp number.
+const HERO_VIDEO_FILE =
+  "Plain T-shirts in different colours, made for easy styling and effortless looks Pick your favourite colour and place your order today DM to order.mp4";
+const HERO_VIDEO = `https://raw.githubusercontent.com/Silasgee/maymart-secret-fashion-house/main/public/assets/videos/${encodeURIComponent(HERO_VIDEO_FILE)}`;
 
 function whatsappLink(item?: string) {
   const message = item
@@ -75,7 +78,7 @@ export default function Home() {
             aria-hidden="true"
           >
             <source
-              src="/assets/hero/maymart-plain-tees-campaign.mp4"
+              src={HERO_VIDEO}
               type="video/mp4"
             />
           </video>
@@ -197,8 +200,8 @@ export default function Home() {
         <section className="about" id="about">
           <div className="about-media">
             <Image
-              src="/assets/editorial/look-01.webp"
-              alt="Maymart Secret clothing displayed in a Lagos fashion space"
+              src="/assets/editorial/campaign-03.webp"
+              alt="Maymart Secret outfits displayed on mannequins in the Lagos fashion space"
               fill
               sizes="(max-width: 900px) 100vw, 50vw"
             />
@@ -265,16 +268,16 @@ export default function Home() {
           <div className="editorial-grid shell">
             <figure className="editorial-frame frame-one">
               <Image
-                src="/assets/editorial/look-05.webp"
-                alt="Full Maymart Secret colour collection on display"
+                src="/assets/editorial/campaign-05.webp"
+                alt="Maymart Secret neutral and navy pieces displayed beside a mannequin"
                 fill
                 sizes="(max-width: 720px) 100vw, 42vw"
               />
             </figure>
             <figure className="editorial-frame frame-two">
               <Image
-                src="/assets/editorial/look-02.webp"
-                alt="Maymart Secret yellow, black and pink pieces on a gold rail"
+                src="/assets/editorial/campaign-04.webp"
+                alt="Close view of Maymart Secret blue, navy and neutral pieces"
                 fill
                 sizes="(max-width: 720px) 76vw, 28vw"
               />
