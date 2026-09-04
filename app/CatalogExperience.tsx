@@ -29,10 +29,10 @@ const looks: Look[] = [
   { id: 13, name: "Red Football Jerseys", category: "Jerseys", image: "/assets/catalog/look-13.webp", alt: "Two red football jerseys on mannequins" },
   { id: 14, name: "Graphic Tee Pair", category: "T-Shirts", image: "/assets/catalog/look-14.webp", alt: "Pink and white graphic T-shirts on mannequins" },
   { id: 15, name: "Graphic Tees & Shorts", category: "T-Shirts", image: "/assets/catalog/look-15.webp", alt: "Two graphic T-shirt and shorts looks on mannequins" },
-  { id: 16, name: "Red Matching Set", category: "Lifestyle", image: "/assets/catalog/look-16.webp", alt: "Group wearing matching printed tops and red trousers" },
-  { id: 17, name: "Red Set Portrait", category: "Lifestyle", image: "/assets/catalog/look-17.webp", alt: "Group portrait in matching printed tops and red trousers" },
-  { id: 18, name: "Red Set Story", category: "Lifestyle", image: "/assets/catalog/look-18.webp", alt: "Group arranged in matching printed tops and red trousers" },
-  { id: 19, name: "Red Set Campaign", category: "Lifestyle", image: "/assets/catalog/look-19.webp", alt: "Campaign portrait in matching printed tops and red trousers" },
+  { id: 16, name: "Christmas Matching Set", category: "Christmas Wears", image: "/assets/catalog/look-16.webp", alt: "Group wearing matching Christmas-print tops and red trousers" },
+  { id: 17, name: "Christmas Set Portrait", category: "Christmas Wears", image: "/assets/catalog/look-17.webp", alt: "Group portrait in matching Christmas-print tops and red trousers" },
+  { id: 18, name: "Christmas Set Story", category: "Christmas Wears", image: "/assets/catalog/look-18.webp", alt: "Group arranged in matching Christmas-print tops and red trousers" },
+  { id: 19, name: "Christmas Set Campaign", category: "Christmas Wears", image: "/assets/catalog/look-19.webp", alt: "Campaign portrait in matching Christmas-print tops and red trousers" },
   { id: 20, name: "Blue Number Jerseys", category: "Jerseys", image: "/assets/catalog/look-20.webp", alt: "Two blue numbered jerseys on mannequins" },
   { id: 21, name: "Black & Red Jerseys", category: "Jerseys", image: "/assets/catalog/look-21.webp", alt: "Black and red numbered jerseys on mannequins" },
   { id: 22, name: "Orange Number Jerseys", category: "Jerseys", image: "/assets/catalog/look-22.webp", alt: "Orange and white numbered jerseys on mannequins" },
@@ -230,8 +230,8 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
 
         <section className="red-story" aria-labelledby="red-story-title">
           <div className="red-story-copy shell">
-            <span>03 / Lifestyle story</span>
-            <h3 id="red-story-title">One set.<br />Four frames.</h3>
+            <span>03 / Christmas wears</span>
+            <h3 id="red-story-title">Christmas looks.<br />Four frames.</h3>
           </div>
           <div className="red-story-grid shell">
             {byIds([16, 17, 18, 19]).map((look, index) => (
