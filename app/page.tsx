@@ -33,6 +33,20 @@ const collections = [
 export default function Home() {
   return (
     <>
+      <div className="site-intro" aria-hidden="true">
+        <div className="site-intro-mark">
+          <Image
+            src="/assets/logo/maymart-secret-logo.webp"
+            alt=""
+            width={720}
+            height={360}
+            priority
+          />
+        </div>
+        <span className="site-intro-line" />
+        <p>Fashion House · Lagos</p>
+      </div>
+
       <a className="skip-link" href="#main">
         Skip to content
       </a>
