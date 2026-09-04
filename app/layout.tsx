@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Maymart Secret | Fashion House, Lagos",
   description:
-    "Explore hoodies, trousers, thick polos and colourful everyday pieces from Maymart Secret in Lagos, Nigeria.",
+    "Explore streetwear, ready-to-wear and wedding outfits from Maymart Secret, a fashion-forward clothing brand in Lagos State.",
 };
 
 export const viewport: Viewport = {

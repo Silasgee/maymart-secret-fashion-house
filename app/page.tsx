@@ -4,6 +4,7 @@ import CatalogExperience, { MobileMenu } from "./CatalogExperience";
 const WHATSAPP_URL = "https://wa.me/message/LJTANQKTCEGXL1";
 const INSTAGRAM_URL = "https://www.instagram.com/maymart_secret/";
 const TIKTOK_URL = "https://www.tiktok.com/@maymart_secret";
+const EMAIL = "marthaobenobe@gmail.com";
 const HERO_VIDEO_FILE =
   "Plain T-shirts in different colours, made for easy styling and effortless looks Pick your favourite colour and place your order today DM to order.mp4";
 const HERO_VIDEO = `https://raw.githubusercontent.com/Silasgee/maymart-secret-fashion-house/main/public/assets/videos/${encodeURIComponent(HERO_VIDEO_FILE)}`;
@@ -122,9 +123,29 @@ export default function Home() {
           </div>
           <div className="about-copy">
             <p className="eyebrow">This is Maymart Secret</p>
-            <h2>Clothes with<br />something to say.</h2>
-            <p className="about-lead">Maymart Secret is a Lagos fashion and streetwear vendor offering hoodies, T-shirts, jerseys, shorts, trousers and more.</p>
-            <p>Browse the real collection, open the look you want, then ask directly about its price, size and availability.</p>
+            <h2>Streetwear to<br />ceremony.</h2>
+            <p className="about-lead">Maymart Secret is a fashion-forward Lagos brand blending urban streetwear with luxury craftsmanship.</p>
+            <p>We specialise in high-quality T-shirts, hoodies and joggers designed for effortless style, alongside premium ready-to-wear and exquisite wedding outfits. From casual cool to elevated elegance, every look is made to bring comfort, confidence and individuality to your wardrobe.</p>
+
+            <dl className="brand-details" aria-label="Maymart Secret brand details">
+              <div>
+                <dt>Based in</dt>
+                <dd>Lagos State</dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href={`mailto:${EMAIL}`}>{EMAIL}</a></dd>
+              </div>
+              <div>
+                <dt>TikTok</dt>
+                <dd><a href={TIKTOK_URL} target="_blank" rel="noreferrer">@maymart_secret ↗</a></dd>
+              </div>
+              <div>
+                <dt>Facebook</dt>
+                <dd>Maymart Secret Fashion House</dd>
+              </div>
+            </dl>
+
             <a className="text-link" href={whatsappLink()} target="_blank" rel="noreferrer">
               Ask what is available <span aria-hidden="true">↗</span>
             </a>
@@ -159,6 +180,7 @@ export default function Home() {
         <p>© {new Date().getFullYear()} Maymart Secret</p>
         <p>Lagos, Nigeria</p>
         <div className="footer-socials" aria-label="Maymart Secret social media">
+          <a href={`mailto:${EMAIL}`}>Email <span aria-hidden="true">↗</span></a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a>
           <a href={TIKTOK_URL} target="_blank" rel="noreferrer">TikTok <span aria-hidden="true">↗</span></a>
         </div>

@@ -1818,6 +1818,53 @@ body.menu-open {
   font-size: clamp(3.6rem, 6.2vw, 7rem);
 }
 
+.brand-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  width: min(100%, 620px);
+  margin: 42px 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.brand-details > div {
+  min-width: 0;
+  padding: 20px 18px 22px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.brand-details > div:nth-child(even) {
+  padding-left: 18px;
+  border-left: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.brand-details dt {
+  margin-bottom: 8px;
+  color: var(--signal);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.brand-details dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.brand-details a {
+  transition: color 180ms ease;
+}
+
+.brand-details a:hover {
+  color: var(--signal);
+}
+
 .shop-flow {
   display: grid;
   grid-template-columns: minmax(320px, 0.8fr) minmax(0, 1.2fr);
@@ -1978,6 +2025,9 @@ body.menu-open {
   .look-dialog-copy h2 { font-size: 3.6rem; }
   .dialog-whatsapp { width: 100%; }
   .about-v2 { min-height: auto; }
+  .brand-details { grid-template-columns: 1fr; margin-top: 34px; }
+  .brand-details > div,
+  .brand-details > div:nth-child(even) { padding: 18px 0 20px; border-left: 0; }
   .shop-flow { gap: 54px; padding-block: 88px; }
   .shop-flow-heading h2 { font-size: clamp(4rem, 19vw, 5.8rem); }
   .shop-flow-steps article { grid-template-columns: 36px 1fr; }
