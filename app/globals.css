@@ -694,8 +694,11 @@ video {
   justify-self: center;
 }
 
-.footer a {
+.footer-socials {
   justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 22px;
 }
 
 a:focus-visible {
@@ -961,7 +964,7 @@ a:focus-visible {
   }
 
   .footer p:nth-child(2),
-  .footer a {
+  .footer-socials {
     justify-self: center;
   }
 }

@@ -1,16 +1,15 @@
 import Image from "next/image";
 
-const WHATSAPP_NUMBER = "2340000000000"; // Replace with Maymart Secret's real WhatsApp number.
+const WHATSAPP_URL = "https://wa.me/message/LJTANQKTCEGXL1";
+const INSTAGRAM_URL = "https://www.instagram.com/maymart_secret/";
+const TIKTOK_URL = "https://www.tiktok.com/@maymart_secret";
 const HERO_VIDEO_FILE =
   "Plain T-shirts in different colours, made for easy styling and effortless looks Pick your favourite colour and place your order today DM to order.mp4";
 const HERO_VIDEO = `https://raw.githubusercontent.com/Silasgee/maymart-secret-fashion-house/main/public/assets/videos/${encodeURIComponent(HERO_VIDEO_FILE)}`;
 
 function whatsappLink(item?: string) {
-  const message = item
-    ? `Hello Maymart Secret, I’m interested in your ${item}. Please can you send me the price and available sizes?`
-    : "Hello Maymart Secret, I’d like to shop your clothing collection. Please can you show me what is currently available?";
-
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  const message = item ? ` about ${item}` : "";
+  return `${WHATSAPP_URL}?text=${encodeURIComponent(`Hello Maymart Secret, I’d like to enquire${message}.`)}`;
 }
 
 const collections = [
@@ -314,13 +313,14 @@ export default function Home() {
       <footer className="footer shell">
         <p>© {new Date().getFullYear()} Maymart Secret</p>
         <p>Lagos, Nigeria</p>
-        <a
-          href="https://www.tiktok.com/@maymart_secret"
-          target="_blank"
-          rel="noreferrer"
-        >
-          TikTok @maymart_secret <span aria-hidden="true">↗</span>
-        </a>
+        <div className="footer-socials" aria-label="Maymart Secret social media">
+          <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
+            Instagram <span aria-hidden="true">↗</span>
+          </a>
+          <a href={TIKTOK_URL} target="_blank" rel="noreferrer">
+            TikTok <span aria-hidden="true">↗</span>
+          </a>
+        </div>
       </footer>
     </>
   );
