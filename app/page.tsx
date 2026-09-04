@@ -177,7 +177,17 @@ export default function Home() {
 
       <footer className="footer shell">
         <p>© {new Date().getFullYear()} Maymart Secret</p>
-        <p>Lagos, Nigeria</p>
+        <p>
+          Lagos, Nigeria · Built by{" "}
+          <a
+            href="https://wa.me/2349066828238"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Contact Silas on WhatsApp"
+          >
+            Silas
+          </a>
+        </p>
         <div className="footer-socials" aria-label="Maymart Secret social media">
           <a href={`mailto:${EMAIL}`}>Email <span aria-hidden="true">↗</span></a>
           <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">Instagram <span aria-hidden="true">↗</span></a>
