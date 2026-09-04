@@ -6,6 +6,9 @@ const TIKTOK_URL = "https://www.tiktok.com/@maymart_secret";
 const HERO_VIDEO_FILE =
   "Plain T-shirts in different colours, made for easy styling and effortless looks Pick your favourite colour and place your order today DM to order.mp4";
 const HERO_VIDEO = `https://raw.githubusercontent.com/Silasgee/maymart-secret-fashion-house/main/public/assets/videos/${encodeURIComponent(HERO_VIDEO_FILE)}`;
+const SECOND_VIDEO_FILE =
+  "Another colour set just dropped More colours, more ways to style your plain tees. Simple, comfortable and easy to pair with anything Which colour are you picking  Available now — DM to order..mp4";
+const SECOND_VIDEO = `https://raw.githubusercontent.com/Silasgee/maymart-secret-fashion-house/main/public/assets/videos/${encodeURIComponent(SECOND_VIDEO_FILE)}`;
 
 function whatsappLink(item?: string) {
   const message = item ? ` about ${item}` : "";
@@ -277,6 +280,39 @@ export default function Home() {
           <div className="moments-intro shell">
             <p className="eyebrow">Fashion moments / Lagos</p>
             <h2 id="moments-title">In the Maymart world.</h2>
+          </div>
+          <div className="campaign-film shell">
+            <div className="campaign-film-copy">
+              <p className="eyebrow dark">Campaign film / 002</p>
+              <h3>Another colour set just dropped.</h3>
+              <p>
+                More colours and more ways to style the everyday. Pick your
+                favourite, then ask Maymart Secret about available sizes.
+              </p>
+              <a
+                className="button button-film"
+                href={whatsappLink("new plain tee colour set")}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ask about this drop <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div className="campaign-film-media">
+              <video
+                className="campaign-film-video"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                poster="/assets/editorial/campaign-01.webp"
+                aria-label="Maymart Secret second plain tee colour campaign"
+              >
+                <source src={SECOND_VIDEO} type="video/mp4" />
+              </video>
+              <span>02 / Colour in motion</span>
+            </div>
           </div>
           <div className="editorial-grid shell">
             <figure className="editorial-frame frame-one">

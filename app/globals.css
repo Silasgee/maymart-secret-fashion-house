@@ -711,6 +711,78 @@ video {
   max-width: 1000px;
 }
 
+.campaign-film {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.72fr);
+  min-height: 740px;
+  margin-bottom: 96px;
+  background: var(--signal);
+  color: var(--ink);
+}
+
+.campaign-film-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(48px, 7vw, 112px);
+}
+
+.campaign-film-copy h3 {
+  max-width: 720px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 6vw, 6.6rem);
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.065em;
+}
+
+.campaign-film-copy > p:not(.eyebrow) {
+  max-width: 470px;
+  margin: 38px 0 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.button-film {
+  align-self: flex-start;
+  width: auto;
+  margin-top: 38px;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.button-film:hover {
+  background: var(--white);
+  color: var(--ink);
+}
+
+.campaign-film-media {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #050505;
+}
+
+.campaign-film-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.campaign-film-media > span {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  padding: 10px 12px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .editorial-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.75fr 0.55fr;
@@ -891,6 +963,15 @@ a:focus-visible {
     grid-template-columns: 1.2fr 0.8fr;
   }
 
+  .campaign-film {
+    grid-template-columns: 1fr 0.8fr;
+    min-height: 650px;
+  }
+
+  .campaign-film-copy {
+    padding: 54px 42px;
+  }
+
   .editorial-note {
     grid-column: 1 / -1;
     max-width: 460px;
@@ -1035,6 +1116,24 @@ a:focus-visible {
 
   .moments-intro {
     margin-bottom: 42px;
+  }
+
+  .campaign-film {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    margin-bottom: 64px;
+  }
+
+  .campaign-film-copy {
+    padding: 58px 22px 62px;
+  }
+
+  .campaign-film-copy h3 {
+    font-size: clamp(3.2rem, 15vw, 5rem);
+  }
+
+  .campaign-film-media {
+    aspect-ratio: 9 / 16;
   }
 
   .editorial-grid {
