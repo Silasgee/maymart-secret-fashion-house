@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CatalogExperience, { MobileMenu } from "./CatalogExperience";
+import { LagosPopularityNotice, ShopperHighlights } from "./ShopperSignals";
 
 const WHATSAPP_URL = "https://wa.me/message/LJTANQKTCEGXL1";
 const INSTAGRAM_URL = "https://www.instagram.com/maymart_secret/";
@@ -163,6 +164,8 @@ export default function Home() {
           </div>
         </section>
 
+        <ShopperHighlights />
+
         <section className="closing-cta closing-cta-v2" id="contact">
           <div className="closing-logo">
             <Image src="/assets/logo/maymart-secret-logo.webp" alt="Maymart Secret Fashion House" width={720} height={360} />
@@ -194,6 +197,8 @@ export default function Home() {
           <a href={TIKTOK_URL} target="_blank" rel="noreferrer">TikTok <span aria-hidden="true">↗</span></a>
         </div>
       </footer>
+
+      <LagosPopularityNotice />
     </>
   );
 }
