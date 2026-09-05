@@ -77,7 +77,7 @@ function LookCard({
           fill
           sizes={variant === "wide" ? "(max-width: 700px) 100vw, 58vw" : "(max-width: 700px) 78vw, 28vw"}
         />
-        <span className="look-card-number">{String(look.id).padStart(2, "0")}</span>
+        <span className="look-card-number" aria-hidden="true" />
       </span>
       <span className="look-card-meta">
         <span>{look.category}</span>
@@ -115,7 +115,7 @@ function LookDialog({ look, onClose }: { look: Look; onClose: () => void }) {
           <Image src={look.image} alt={look.alt} fill sizes="(max-width: 760px) 100vw, 58vw" priority />
         </div>
         <div className="look-dialog-copy">
-          <p>{look.category} / {String(look.id).padStart(2, "0")}</p>
+          <p>{look.category}</p>
           <h2 id="look-dialog-title">{look.name}</h2>
           <p className="look-dialog-note">Ask about price, sizes and availability.</p>
           <a className="button dialog-whatsapp" href={inquiryLink(look)} target="_blank" rel="noreferrer">
@@ -157,13 +157,13 @@ export function MobileMenu() {
           </div>
           <div className="menu-links">
             {[
-              ["01", "Home", "#top"],
-              ["02", "Collection", "#collection"],
-              ["03", "About", "#about"],
-              ["04", "Contact", "#contact"],
-            ].map(([number, label, href]) => (
+              ["Home", "#top"],
+              ["Collection", "#collection"],
+              ["About", "#about"],
+              ["Contact", "#contact"],
+            ].map(([label, href]) => (
               <a href={href} onClick={close} key={label} tabIndex={open ? 0 : -1}>
-                <span>{number}</span>{label}<i>↘</i>
+                {label}<i>↘</i>
               </a>
             ))}
           </div>
@@ -186,7 +186,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
       <section className="lookbook" id="collection" aria-labelledby="lookbook-title">
         <div className="lookbook-head shell">
           <div>
-            <p className="eyebrow dark">The Maymart index / 31 looks</p>
+            <p className="eyebrow dark">The Maymart index / Always evolving</p>
             <h2 id="lookbook-title">Not a shop floor.<br /><em>A style archive.</em></h2>
           </div>
           <div className="lookbook-intro">
@@ -202,7 +202,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
 
         <section className="collection-story hoodies-story shell" id="hoodies" aria-labelledby="hoodies-title">
           <div className="story-title">
-            <span>01 / Street sets</span>
+            <span>Street sets</span>
             <h3 id="hoodies-title">Soft volume.<br />Hard presence.</h3>
           </div>
           <div className="hoodie-composition">
@@ -217,7 +217,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
 
         <section className="collection-story tees-story" id="tees" aria-labelledby="tees-title">
           <div className="story-title shell story-title-light">
-            <span>02 / Graphic language</span>
+            <span>Graphic language</span>
             <h3 id="tees-title">The wall of tees.</h3>
             <p>Swipe to browse.</p>
           </div>
@@ -230,7 +230,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
 
         <section className="red-story" aria-labelledby="red-story-title">
           <div className="red-story-copy shell">
-            <span>03 / Christmas wears</span>
+            <span>Christmas wears</span>
             <h3 id="red-story-title">Christmas looks.<br />Four frames.</h3>
           </div>
           <div className="red-story-grid shell">
@@ -242,7 +242,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
 
         <section className="campaign-film-v2" aria-labelledby="film-title">
           <div className="campaign-film-v2-copy">
-            <p>Campaign film / 002</p>
+            <p>Campaign film</p>
             <h3 id="film-title">Another colour set just dropped.</h3>
             <span>Plain tees / Colour in motion</span>
           </div>
@@ -255,7 +255,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
 
         <section className="collection-story jerseys-story shell" id="jerseys" aria-labelledby="jerseys-title">
           <div className="story-title">
-            <span>04 / Jerseys</span>
+            <span>Jerseys</span>
             <h3 id="jerseys-title">Numbers<br />with attitude.</h3>
           </div>
           <div className="jersey-grid">
@@ -268,7 +268,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
         <section className="collection-story shorts-story" id="shorts" aria-labelledby="shorts-title">
           <div className="shorts-inner shell">
             <div className="story-title">
-              <span>05 / Shorts</span>
+              <span>Shorts</span>
               <h3 id="shorts-title">Pick a colour.<br />Keep it moving.</h3>
             </div>
             <div className="shorts-grid">
@@ -281,7 +281,7 @@ export default function CatalogExperience({ secondVideo }: { secondVideo: string
 
         <section className="collection-story jackets-story shell" id="jackets" aria-labelledby="jackets-title">
           <div className="story-title jackets-title">
-            <span>06 / Varsity jackets</span>
+            <span>Varsity jackets</span>
             <h3 id="jackets-title">The final<br />layer.</h3>
           </div>
           <div className="jacket-grid">

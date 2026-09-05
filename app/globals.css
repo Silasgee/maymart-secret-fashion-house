@@ -884,15 +884,6 @@ video {
   animation: shopper-highlight-in 620ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-.shopper-highlight > span {
-  display: block;
-  margin-bottom: 28px;
-  color: var(--signal);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-}
-
 .shopper-highlight h2 {
   max-width: 980px;
   margin: 0;
@@ -1494,7 +1485,7 @@ body.menu-open {
 
 .menu-links a {
   display: grid;
-  grid-template-columns: 36px 1fr auto;
+  grid-template-columns: 1fr auto;
   align-items: center;
   padding: 18px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.24);
@@ -1502,16 +1493,6 @@ body.menu-open {
   font-size: clamp(2.7rem, 9vw, 4.8rem);
   line-height: 0.92;
   letter-spacing: -0.055em;
-}
-
-.menu-links a > span {
-  align-self: start;
-  padding-top: 8px;
-  color: var(--signal);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
 }
 
 .menu-links a > i {
@@ -1691,12 +1672,9 @@ body.menu-open {
   position: absolute;
   top: 12px;
   left: 12px;
-  padding: 8px 9px;
+  width: 34px;
+  height: 34px;
   background: var(--signal);
-  color: var(--ink);
-  font-size: 0.68rem;
-  font-weight: 900;
-  letter-spacing: 0.1em;
 }
 
 .look-card-meta {
@@ -2077,18 +2055,8 @@ body.menu-open {
 }
 
 .shop-flow-steps article {
-  display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: 20px;
-  align-items: start;
   padding-block: 34px 42px;
   border-bottom: 1px solid var(--ink);
-}
-
-.shop-flow-steps span {
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
 }
 
 .shop-flow-steps h3 {
@@ -2225,6 +2193,4 @@ body.menu-open {
   .brand-details > div:nth-child(even) { padding: 18px 0 20px; border-left: 0; }
   .shop-flow { gap: 54px; padding-block: 88px; }
   .shop-flow-heading h2 { font-size: clamp(4rem, 19vw, 5.8rem); }
-  .shop-flow-steps article { grid-template-columns: 36px 1fr; }
-  .shop-flow-steps article p { grid-column: 2; }
 }

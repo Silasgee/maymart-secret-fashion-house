@@ -158,9 +158,9 @@ export default function Home() {
             <h2 id="shop-flow-title">See it.<br />Open it.<br /><em>Ask.</em></h2>
           </div>
           <div className="shop-flow-steps">
-            <article><span>01</span><h3>Browse</h3></article>
-            <article><span>02</span><h3>Open a look</h3></article>
-            <article><span>03</span><h3>Ask on WhatsApp</h3></article>
+            <article><h3>Browse</h3></article>
+            <article><h3>Open a look</h3></article>
+            <article><h3>Ask on WhatsApp</h3></article>
           </div>
         </section>
 

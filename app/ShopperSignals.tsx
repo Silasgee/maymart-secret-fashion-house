@@ -45,7 +45,6 @@ export function ShopperHighlights() {
       <div className="shopper-highlights-inner shell">
         <p className="eyebrow" id="shopper-highlights-title">The Maymart experience</p>
         <div className="shopper-highlight" key={active} aria-live={paused ? "polite" : "off"}>
-          <span aria-hidden="true">0{active + 1}</span>
           <h2>{highlights[active].title}</h2>
           <p>{highlights[active].copy}</p>
         </div>
@@ -57,7 +56,7 @@ export function ShopperHighlights() {
                 type="button"
                 key={highlight.title}
                 onClick={() => setActive(index)}
-                aria-label={`Show highlight ${index + 1}`}
+                aria-label={`Show ${highlight.title}`}
                 aria-current={index === active ? "true" : undefined}
               />
             ))}
