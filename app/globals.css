@@ -1675,6 +1675,10 @@ body.menu-open {
   width: 34px;
   height: 34px;
   background: var(--signal);
+  background-image: url("/icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26px 26px;
 }
 
 .look-card-meta {
