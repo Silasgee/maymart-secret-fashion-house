@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CatalogExperience, { MobileMenu } from "./CatalogExperience";
-import { LagosPopularityNotice, ShopperHighlights } from "./ShopperSignals";
+import { ShopperHighlights } from "./ShopperSignals";
 
 const WHATSAPP_URL = "https://wa.me/message/LJTANQKTCEGXL1";
 const INSTAGRAM_URL = "https://www.instagram.com/maymart_secret/";
@@ -198,7 +198,6 @@ export default function Home() {
         </div>
       </footer>
 
-      <LagosPopularityNotice />
     </>
   );
 }

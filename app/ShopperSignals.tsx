@@ -69,35 +69,3 @@ export function ShopperHighlights() {
     </section>
   );
 }
-
-export function LagosPopularityNotice() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    let hideTimer: number;
-
-    const showNotice = () => {
-      setVisible(true);
-      hideTimer = window.setTimeout(() => setVisible(false), 4600);
-    };
-
-    const firstTimer = window.setTimeout(showNotice, 5200);
-    const interval = window.setInterval(showNotice, 16000);
-
-    return () => {
-      window.clearTimeout(firstTimer);
-      window.clearTimeout(hideTimer);
-      window.clearInterval(interval);
-    };
-  }, []);
-
-  return (
-    <aside className={`lagos-popularity${visible ? " is-visible" : ""}`} aria-live="polite" aria-hidden={!visible}>
-      <span className="lagos-popularity-mark" aria-hidden="true">M</span>
-      <span>
-        <strong>Popular with shoppers in Lagos</strong>
-        <small>Explore the latest Maymart looks.</small>
-      </span>
-    </aside>
-  );
-}

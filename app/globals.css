@@ -942,60 +942,6 @@ video {
   cursor: pointer;
 }
 
-.lagos-popularity {
-  position: fixed;
-  z-index: 80;
-  left: 22px;
-  bottom: 22px;
-  display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 13px;
-  align-items: center;
-  width: min(330px, calc(100vw - 44px));
-  padding: 13px 15px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(8, 8, 8, 0.94);
-  color: var(--white);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(22px);
-  transition: opacity 320ms ease, transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.lagos-popularity.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.lagos-popularity-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  background: var(--signal);
-  color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.3rem;
-}
-
-.lagos-popularity strong,
-.lagos-popularity small {
-  display: block;
-}
-
-.lagos-popularity strong {
-  font-size: 0.82rem;
-  line-height: 1.25;
-}
-
-.lagos-popularity small {
-  margin-top: 4px;
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 0.7rem;
-  line-height: 1.3;
-}
-
 @keyframes shopper-highlight-in {
   from {
     opacity: 0;
@@ -1339,12 +1285,6 @@ a:focus-visible {
 
   .shopper-highlight-dots button.is-active {
     width: 48px;
-  }
-
-  .lagos-popularity {
-    left: 14px;
-    bottom: 14px;
-    width: min(330px, calc(100vw - 28px));
   }
 
   .closing-logo {
